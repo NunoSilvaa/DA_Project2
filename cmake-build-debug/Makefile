@@ -152,6 +152,30 @@ Cenario1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoDA_2.dir\build.make CMakeFiles/ProjetoDA_2.dir/Cenario1.cpp.s
 .PHONY : Cenario1.cpp.s
 
+Cenario2.obj: Cenario2.cpp.obj
+.PHONY : Cenario2.obj
+
+# target to build an object file
+Cenario2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoDA_2.dir\build.make CMakeFiles/ProjetoDA_2.dir/Cenario2.cpp.obj
+.PHONY : Cenario2.cpp.obj
+
+Cenario2.i: Cenario2.cpp.i
+.PHONY : Cenario2.i
+
+# target to preprocess a source file
+Cenario2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoDA_2.dir\build.make CMakeFiles/ProjetoDA_2.dir/Cenario2.cpp.i
+.PHONY : Cenario2.cpp.i
+
+Cenario2.s: Cenario2.cpp.s
+.PHONY : Cenario2.s
+
+# target to generate assembly for a file
+Cenario2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoDA_2.dir\build.make CMakeFiles/ProjetoDA_2.dir/Cenario2.cpp.s
+.PHONY : Cenario2.cpp.s
+
 Graph2.obj: Graph2.cpp.obj
 .PHONY : Graph2.obj
 
@@ -175,30 +199,6 @@ Graph2.s: Graph2.cpp.s
 Graph2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoDA_2.dir\build.make CMakeFiles/ProjetoDA_2.dir/Graph2.cpp.s
 .PHONY : Graph2.cpp.s
-
-info.obj: info.cpp.obj
-.PHONY : info.obj
-
-# target to build an object file
-info.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoDA_2.dir\build.make CMakeFiles/ProjetoDA_2.dir/info.cpp.obj
-.PHONY : info.cpp.obj
-
-info.i: info.cpp.i
-.PHONY : info.i
-
-# target to preprocess a source file
-info.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoDA_2.dir\build.make CMakeFiles/ProjetoDA_2.dir/info.cpp.i
-.PHONY : info.cpp.i
-
-info.s: info.cpp.s
-.PHONY : info.s
-
-# target to generate assembly for a file
-info.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoDA_2.dir\build.make CMakeFiles/ProjetoDA_2.dir/info.cpp.s
-.PHONY : info.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -260,12 +260,12 @@ help:
 	@echo ... Cenario1.obj
 	@echo ... Cenario1.i
 	@echo ... Cenario1.s
+	@echo ... Cenario2.obj
+	@echo ... Cenario2.i
+	@echo ... Cenario2.s
 	@echo ... Graph2.obj
 	@echo ... Graph2.i
 	@echo ... Graph2.s
-	@echo ... info.obj
-	@echo ... info.i
-	@echo ... info.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

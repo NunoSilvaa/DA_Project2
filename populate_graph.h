@@ -7,14 +7,12 @@
 
 #include "vector"
 //#include "Graph.h"
-#include "info.h"
 #include "Graph2.h"
 
 
 class populate_graph {
     int num_nodes;
     int num_branches;
-    std::vector<info> info_vector;
 public:
     populate_graph();
 

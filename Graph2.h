@@ -10,7 +10,6 @@
 #include <limits>
 #include <list>
 #include <algorithm>
-#include "info.h"
 //#include "MutablePriorityQueue.h"
 #include "MaxHeapPriorityQueue.h"
 
@@ -28,6 +27,7 @@ class Graph2{
 
     struct Node {
         std::list<Edge> adj;
+        std::vector<Edge> residual;
         int pred;
         int cap;
         int dur;
@@ -56,6 +56,8 @@ public:
     std::vector<Node> printCapacity(Node &source, Node &goal);
     bool operator<(Node & node) const;
     void print_flow();
+    int bfs(int ori, int dest);
+    int edmondsKarp(int ori, int dest);
 
 };
 #endif //PROJETODA_2_GRAPH2_H

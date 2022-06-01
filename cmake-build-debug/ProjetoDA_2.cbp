@@ -86,7 +86,10 @@
 		<Unit filename="C:/Users/nmls1/ProjetoDA_2/Cenario1.h">
 			<Option target="ProjetoDA_2"/>
 		</Unit>
-		<Unit filename="C:/Users/nmls1/ProjetoDA_2/Graph.h">
+		<Unit filename="C:/Users/nmls1/ProjetoDA_2/Cenario2.cpp">
+			<Option target="ProjetoDA_2"/>
+		</Unit>
+		<Unit filename="C:/Users/nmls1/ProjetoDA_2/Cenario2.h">
 			<Option target="ProjetoDA_2"/>
 		</Unit>
 		<Unit filename="C:/Users/nmls1/ProjetoDA_2/Graph2.cpp">
@@ -102,12 +105,6 @@
 			<Option target="ProjetoDA_2"/>
 		</Unit>
 		<Unit filename="C:/Users/nmls1/ProjetoDA_2/MinHeapPQ.h">
-			<Option target="ProjetoDA_2"/>
-		</Unit>
-		<Unit filename="C:/Users/nmls1/ProjetoDA_2/info.cpp">
-			<Option target="ProjetoDA_2"/>
-		</Unit>
-		<Unit filename="C:/Users/nmls1/ProjetoDA_2/info.h">
 			<Option target="ProjetoDA_2"/>
 		</Unit>
 		<Unit filename="C:/Users/nmls1/ProjetoDA_2/main.cpp">

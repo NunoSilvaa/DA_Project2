@@ -14,7 +14,7 @@ Graph2 populate_graph::read_tests(){
     int cap;
     int dur;
 
-    std::ifstream fin("../Tests/intest.txt");
+    std::ifstream fin("../Tests/intest2.txt");
 
     fin >> num_nodes >> num_branches;
 
