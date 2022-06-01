@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ProjetoDA_2.dir/cenario1.cpp.obj"
+  "CMakeFiles/ProjetoDA_2.dir/Cenario1.cpp.obj"
+  "CMakeFiles/ProjetoDA_2.dir/Graph2.cpp.obj"
   "CMakeFiles/ProjetoDA_2.dir/info.cpp.obj"
   "CMakeFiles/ProjetoDA_2.dir/main.cpp.obj"
   "CMakeFiles/ProjetoDA_2.dir/populate_graph.cpp.obj"

@@ -6,7 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/nmls1/ProjetoDA_2/Graph.h
+C:/Users/nmls1/ProjetoDA_2/Graph2.cpp
+Graph2.h
+C:/Users/nmls1/ProjetoDA_2/Graph2.h
+MaxHeapPQ.h
+C:/Users/nmls1/ProjetoDA_2/MaxHeapPQ.h
+MinHeapPQ.h
+C:/Users/nmls1/ProjetoDA_2/MinHeapPQ.h
+
+C:/Users/nmls1/ProjetoDA_2/Graph2.h
 iostream
 -
 vector
@@ -15,38 +23,30 @@ queue
 -
 limits
 -
+list
+-
 algorithm
 -
+info.h
+C:/Users/nmls1/ProjetoDA_2/info.h
 MaxHeapPriorityQueue.h
 C:/Users/nmls1/ProjetoDA_2/MaxHeapPriorityQueue.h
 
+C:/Users/nmls1/ProjetoDA_2/MaxHeapPQ.h
+vector
+-
+unordered_map
+-
+
 C:/Users/nmls1/ProjetoDA_2/MaxHeapPriorityQueue.h
 vector
 -
 
-C:/Users/nmls1/ProjetoDA_2/info.h
-
-C:/Users/nmls1/ProjetoDA_2/main.cpp
-iostream
--
-populate_graph.h
-C:/Users/nmls1/ProjetoDA_2/populate_graph.h
-
-C:/Users/nmls1/ProjetoDA_2/populate_graph.cpp
-fstream
--
-populate_graph.h
-C:/Users/nmls1/ProjetoDA_2/populate_graph.h
-iostream
-C:/Users/nmls1/ProjetoDA_2/iostream
-info.h
-C:/Users/nmls1/ProjetoDA_2/info.h
-
-C:/Users/nmls1/ProjetoDA_2/populate_graph.h
+C:/Users/nmls1/ProjetoDA_2/MinHeapPQ.h
 vector
-C:/Users/nmls1/ProjetoDA_2/vector
-Graph.h
-C:/Users/nmls1/ProjetoDA_2/Graph.h
-info.h
+-
+unordered_map
+-
+
 C:/Users/nmls1/ProjetoDA_2/info.h
 

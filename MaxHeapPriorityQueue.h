@@ -157,11 +157,12 @@ T * MaxHeapPriorityQueue<T>::extractMax() {
     H[1] = H.back();
     H.pop_back();
     //size = size - 1;
-    /*if(H.size() > 1) shiftDown(1);
-    result->queueIndex = 0;*/
+    if(H.size() > 1) shiftDown(1);
+    result->queueIndex = 1;
     // Shift down the replaced element
     // to maintain the heap property
-    shiftDown(1);
+    /*shiftUp(1);
+    result->queueIndex = 0;*/
     return result;
 }
 
@@ -169,7 +170,9 @@ T * MaxHeapPriorityQueue<T>::extractMax() {
 // of an element
 template <class T>
 void MaxHeapPriorityQueue<T>::changePriority(T * x){
+    std::cout << "index1:" << x->queueIndex << " ";
     shiftUp(x->queueIndex);
+    std::cout << "index2:" << x->queueIndex << " ";
     /*int oldp = H[i];
     H[i] = p;
 
@@ -206,7 +209,8 @@ T * MaxHeapPriorityQueue<T>::getMax()
 template <class T>
 void MaxHeapPriorityQueue<T>::print(){
     int i = 1;
-    std::cout << "\nPriority Queue : ";
+    std::cout << "\nPriority Queue : " /*<< H[1]->cap*/;
+
     //std::cout << H[1]->cap;
     while (i <= 6) {
         std::cout << H[i]->cap << " ";

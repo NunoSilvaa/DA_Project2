@@ -80,16 +80,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/nmls1/ProjetoDA_2/Cenario1.cpp">
+			<Option target="ProjetoDA_2"/>
+		</Unit>
+		<Unit filename="C:/Users/nmls1/ProjetoDA_2/Cenario1.h">
+			<Option target="ProjetoDA_2"/>
+		</Unit>
 		<Unit filename="C:/Users/nmls1/ProjetoDA_2/Graph.h">
+			<Option target="ProjetoDA_2"/>
+		</Unit>
+		<Unit filename="C:/Users/nmls1/ProjetoDA_2/Graph2.cpp">
+			<Option target="ProjetoDA_2"/>
+		</Unit>
+		<Unit filename="C:/Users/nmls1/ProjetoDA_2/Graph2.h">
+			<Option target="ProjetoDA_2"/>
+		</Unit>
+		<Unit filename="C:/Users/nmls1/ProjetoDA_2/MaxHeapPQ.h">
 			<Option target="ProjetoDA_2"/>
 		</Unit>
 		<Unit filename="C:/Users/nmls1/ProjetoDA_2/MaxHeapPriorityQueue.h">
 			<Option target="ProjetoDA_2"/>
 		</Unit>
-		<Unit filename="C:/Users/nmls1/ProjetoDA_2/cenario1.cpp">
-			<Option target="ProjetoDA_2"/>
-		</Unit>
-		<Unit filename="C:/Users/nmls1/ProjetoDA_2/cenario1.h">
+		<Unit filename="C:/Users/nmls1/ProjetoDA_2/MinHeapPQ.h">
 			<Option target="ProjetoDA_2"/>
 		</Unit>
 		<Unit filename="C:/Users/nmls1/ProjetoDA_2/info.cpp">

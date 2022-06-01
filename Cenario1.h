@@ -6,8 +6,13 @@
 #define PROJETODA_2_CENARIO1_H
 
 
-class cenario1 {
-    cenario1();
+#include "Graph2.h"
+
+class Cenario1 {
+public:
+    Cenario1();
+    void maximizeCapacity(Graph2 & graph);
+    void maxCapMinDist(Graph2 & graph);
 };
 
 

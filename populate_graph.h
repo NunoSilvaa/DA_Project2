@@ -6,22 +6,19 @@
 #define PROJETODA_2_POPULATE_GRAPH_H
 
 #include "vector"
-#include "Graph.h"
+//#include "Graph.h"
 #include "info.h"
+#include "Graph2.h"
 
 
 class populate_graph {
     int num_nodes;
     int num_branches;
     std::vector<info> info_vector;
-    Graph<int> g;
 public:
     populate_graph();
 
-    void read_tests();
-    void build_graph();
-
-    int maximize_group(int ori, int dest);
+    Graph2 read_tests();
 };
 
 

@@ -128,29 +128,53 @@ ProjetoDA_2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoDA_2.dir\build.make CMakeFiles/ProjetoDA_2.dir/build
 .PHONY : ProjetoDA_2/fast
 
-cenario1.obj: cenario1.cpp.obj
-.PHONY : cenario1.obj
+Cenario1.obj: Cenario1.cpp.obj
+.PHONY : Cenario1.obj
 
 # target to build an object file
-cenario1.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoDA_2.dir\build.make CMakeFiles/ProjetoDA_2.dir/cenario1.cpp.obj
-.PHONY : cenario1.cpp.obj
+Cenario1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoDA_2.dir\build.make CMakeFiles/ProjetoDA_2.dir/Cenario1.cpp.obj
+.PHONY : Cenario1.cpp.obj
 
-cenario1.i: cenario1.cpp.i
-.PHONY : cenario1.i
+Cenario1.i: Cenario1.cpp.i
+.PHONY : Cenario1.i
 
 # target to preprocess a source file
-cenario1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoDA_2.dir\build.make CMakeFiles/ProjetoDA_2.dir/cenario1.cpp.i
-.PHONY : cenario1.cpp.i
+Cenario1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoDA_2.dir\build.make CMakeFiles/ProjetoDA_2.dir/Cenario1.cpp.i
+.PHONY : Cenario1.cpp.i
 
-cenario1.s: cenario1.cpp.s
-.PHONY : cenario1.s
+Cenario1.s: Cenario1.cpp.s
+.PHONY : Cenario1.s
 
 # target to generate assembly for a file
-cenario1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoDA_2.dir\build.make CMakeFiles/ProjetoDA_2.dir/cenario1.cpp.s
-.PHONY : cenario1.cpp.s
+Cenario1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoDA_2.dir\build.make CMakeFiles/ProjetoDA_2.dir/Cenario1.cpp.s
+.PHONY : Cenario1.cpp.s
+
+Graph2.obj: Graph2.cpp.obj
+.PHONY : Graph2.obj
+
+# target to build an object file
+Graph2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoDA_2.dir\build.make CMakeFiles/ProjetoDA_2.dir/Graph2.cpp.obj
+.PHONY : Graph2.cpp.obj
+
+Graph2.i: Graph2.cpp.i
+.PHONY : Graph2.i
+
+# target to preprocess a source file
+Graph2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoDA_2.dir\build.make CMakeFiles/ProjetoDA_2.dir/Graph2.cpp.i
+.PHONY : Graph2.cpp.i
+
+Graph2.s: Graph2.cpp.s
+.PHONY : Graph2.s
+
+# target to generate assembly for a file
+Graph2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjetoDA_2.dir\build.make CMakeFiles/ProjetoDA_2.dir/Graph2.cpp.s
+.PHONY : Graph2.cpp.s
 
 info.obj: info.cpp.obj
 .PHONY : info.obj
@@ -233,9 +257,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... ProjetoDA_2
-	@echo ... cenario1.obj
-	@echo ... cenario1.i
-	@echo ... cenario1.s
+	@echo ... Cenario1.obj
+	@echo ... Cenario1.i
+	@echo ... Cenario1.s
+	@echo ... Graph2.obj
+	@echo ... Graph2.i
+	@echo ... Graph2.s
 	@echo ... info.obj
 	@echo ... info.i
 	@echo ... info.s
