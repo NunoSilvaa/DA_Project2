@@ -23,11 +23,12 @@ class Graph2{
         int dest;      // destination vertex
         int flow; // edge weight
         int capacity, duration;
+        bool visited = true;
     };
 
     struct Node {
         std::list<Edge> adj;
-        std::vector<Edge> residual;
+        std::list<Edge*> residual;
         int pred;
         int cap;
         int dur;
@@ -56,8 +57,10 @@ public:
     std::vector<Node> printCapacity(Node &source, Node &goal);
     bool operator<(Node & node) const;
     void print_flow();
-    int bfs(int ori, int dest);
-    int edmondsKarp(int ori, int dest);
+    int bfs(int ori);
+    void edmondsKarp(int ori, int dest, int size, std::vector<std::pair<int, std::vector<int>>> allPaths);
+    void calculate_flow();
+    bool path_checker(int ori, int dest, std::vector<Edge*> &edges);
 
 };
 #endif //PROJETODA_2_GRAPH2_H
