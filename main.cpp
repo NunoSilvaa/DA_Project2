@@ -11,6 +11,6 @@ int main() {
     Graph2 g = pf.read_tests();
     //c1.maximizeCapacity(g);
     //c1.maxCapMinDist(g);
-    c2.c1_1(g);
+    c2.c2_2(g);
     return 0;
 }

@@ -10,7 +10,11 @@
 class Cenario2 {
 public:
     Cenario2();
-    void c1_1(Graph2 &graph2);
+    void c2_1_2_2(Graph2 &graph);
+    void c2_2(Graph2 & graph);
+    void c2_3(Graph2 & graph);
+    void c2_4(Graph2 & graph);
+    void c2_5(Graph2 & graph);
 };
 
 

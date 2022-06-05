@@ -6,11 +6,19 @@
 
 Cenario2::Cenario2() {}
 
-void Cenario2::c1_1(Graph2 & graph) {
-    int ori, dest;
-    std::vector<std::pair<int, std::vector<int>>> allPaths;
-    graph.edmondsKarp(1, 6,5, allPaths);
-    for(auto e : allPaths){
+void Cenario2::c2_1_2_2(Graph2 & graph) {
+    int ori, dest, size, plus;
+    if(graph.edmondsKarpGroupSize(ori, dest, size)){
+        std::cout << "maxFlow: " << graph.getMaxFlow(dest) << "\n";
+        graph.printAllPaths();
+    }
+    std::cout << "How many people do you want to add? ";
+    std::cin >> plus;
+    if(graph.edmondsKarpGroupSize(ori, dest, size + plus)){
+        std::cout << "maxFlow: " << graph.getMaxFlow(dest) << "\n";
+        graph.printAllPaths();
+    }
+    /*for(auto e : allPaths){
         std::cout << "cap:" <<e.first << " (";
         for(int i = e.second.size()-1; i >= 0; i--){
             if(i == 0)
@@ -18,6 +26,15 @@ void Cenario2::c1_1(Graph2 & graph) {
             else
                 std::cout << e.second[i] << "->";
         }
-    }
+    }*/
     //std::cout << graph.bfs(1, 6) << " "/*graph.edmondsKarp(ori, dest)*/;
+}
+
+void Cenario2::c2_2(Graph2 & graph) {
+    int ori=1, dest=6, size=10, plus;
+    if(graph.edmondsKarpGroupSize(ori, dest, size)){
+        //std::cout << "maxFlow: " << graph.getMaxFlow(dest) << "\n";
+        graph.printAllPaths();
+        std::cout << graph.reuniteGroup(ori, dest, size);
+    }
 }
