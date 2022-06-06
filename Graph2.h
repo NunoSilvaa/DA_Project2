@@ -61,8 +61,6 @@ public:
     void updateAdj();
     void edmondsKarp(int ori, int dest);
     bool edmondsKarpGroupSize(int ori, int dest, int size);
-    void calculate_flow();
-    bool path_checker(int ori, int dest, std::vector<Edge*> &edges);
     void printAllPaths();
     int reuniteGroup(int ori, int dest, int size);
     void longestWait(int ori);
