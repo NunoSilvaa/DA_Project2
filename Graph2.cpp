@@ -3,16 +3,11 @@
 //
 
 #include "Graph2.h"
-//#include "MaxHeapPriorityQueue.h"
 #include "MaxHeapPQ.h"
 #include "MinHeapPQ.h"
 #include "algorithm"
 
 Graph2::Graph2(int num, bool dir) : num_vertex(num), hasDir(dir), all_vertex(num+1) {
-}
-
-std::vector<Graph2::Node> Graph2::getAllVertexs() {
-    return this->all_vertex;
 }
 
 int Graph2::getMaxFlow(int dest){
@@ -28,16 +23,6 @@ int Graph2::getMaxFlow(int dest){
     //return maxFlow;
 }
 
-Graph2::Node Graph2::findNode(int i) {
-    return all_vertex[i];
-}
-
-void Graph2::addNode(int i) {
-    Node node;
-    node.pred = 0;
-    node.visited = false;
-    all_vertex.push_back(node);
-}
 
 void Graph2::addEdgeCapacity(int sourc, int dest, int c, int d) {
     if (sourc < 1 || sourc >= num_vertex || dest < 1 || dest > num_vertex) return;
@@ -53,28 +38,18 @@ void Graph2::maximizeCapacity(int ori) {
     all_vertex[ori].cap = INF;
     MaxHeapPQ<int, int> q(num_vertex, -1);
     // Adicionar todos os nodes
-    //std::cout << q.getSize();
+
     for(int n = 1; n <= num_vertex; n++){
         q.insert(n, all_vertex[n].cap);
-        //std::cout << n->cap << " ";
     }
-    //std::cout << q.getSize();
-    //q.print(); //all ok
     while( !q.empty() ) {
-        //std::cout << " size:" << q.getSize() << " ";
-        //std::cout << " One" << " ";
         int v = q.extractMax();
-        //std::cout << " size2:" << q.getSize() << " ";
-        //std::cout << all_vertex[v].cap << " ";
         for(auto e : all_vertex[v].adj) {
-            //std::cout <<"vindex:" << v->queueIndex << " ";
             if(std::min(all_vertex[v].cap, e.capacity) > all_vertex[e.dest].cap){
                 all_vertex[e.dest].cap = std::min(all_vertex[v].cap, e.capacity);
                 all_vertex[e.dest].pred = v;
                 q.increaseKey(e.dest, all_vertex[e.dest].cap);
-                //q.print();
             }
-            //q.print();
         }
     }
     //q.print();
