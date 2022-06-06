@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/nmls1/ProjetoDA_2/Cenario1.cpp
+Cenario1.h
+C:/Users/nmls1/ProjetoDA_2/Cenario1.h
+
+C:/Users/nmls1/ProjetoDA_2/Cenario1.h
+Graph2.h
+C:/Users/nmls1/ProjetoDA_2/Graph2.h
+
+C:/Users/nmls1/ProjetoDA_2/Cenario2.cpp
+Cenario2.h
+C:/Users/nmls1/ProjetoDA_2/Cenario2.h
+
+C:/Users/nmls1/ProjetoDA_2/Cenario2.h
+Graph2.h
+C:/Users/nmls1/ProjetoDA_2/Graph2.h
+
 C:/Users/nmls1/ProjetoDA_2/Graph2.cpp
 Graph2.h
 C:/Users/nmls1/ProjetoDA_2/Graph2.h
@@ -29,8 +45,6 @@ list
 -
 algorithm
 -
-MaxHeapPriorityQueue.h
-C:/Users/nmls1/ProjetoDA_2/MaxHeapPriorityQueue.h
 
 C:/Users/nmls1/ProjetoDA_2/MaxHeapPQ.h
 vector
@@ -38,13 +52,33 @@ vector
 unordered_map
 -
 
-C:/Users/nmls1/ProjetoDA_2/MaxHeapPriorityQueue.h
-vector
--
-
 C:/Users/nmls1/ProjetoDA_2/MinHeapPQ.h
 vector
 -
 unordered_map
 -
+
+C:/Users/nmls1/ProjetoDA_2/main.cpp
+iostream
+-
+populate_graph.h
+C:/Users/nmls1/ProjetoDA_2/populate_graph.h
+Cenario1.h
+C:/Users/nmls1/ProjetoDA_2/Cenario1.h
+Cenario2.h
+C:/Users/nmls1/ProjetoDA_2/Cenario2.h
+
+C:/Users/nmls1/ProjetoDA_2/populate_graph.cpp
+fstream
+-
+populate_graph.h
+C:/Users/nmls1/ProjetoDA_2/populate_graph.h
+iostream
+C:/Users/nmls1/ProjetoDA_2/iostream
+
+C:/Users/nmls1/ProjetoDA_2/populate_graph.h
+vector
+C:/Users/nmls1/ProjetoDA_2/vector
+Graph2.h
+C:/Users/nmls1/ProjetoDA_2/Graph2.h
 

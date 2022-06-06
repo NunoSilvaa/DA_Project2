@@ -11,7 +11,6 @@
 #include <list>
 #include <algorithm>
 //#include "MutablePriorityQueue.h"
-#include "MaxHeapPriorityQueue.h"
 
 
 #define INF (INT_MAX/2)
@@ -24,16 +23,7 @@ class Graph2{
         int dest;      // destination vertex
         int flow; // edge weight
         int capacity, duration;
-        //Edge* residualEdge;
         bool visited = true;
-        /*Edge(int from, int dest, int flow, int capacity, int duration, bool visited){
-            this->from = from;
-            this->dest = dest;
-            this->flow = flow;
-            this->capacity = capacity;
-            this->duration = duration;
-            this->visited = visited;
-        };*/
     };
 
     struct Node {
@@ -43,12 +33,13 @@ class Graph2{
         int cap;
         int dur;
         int dist;
+        int maxWait;
+        int minWait;
         Edge predEdge = Edge{0,0,0,0,0, true};
         bool visited;
     };
 
     int num_vertex;
-    //int maxFlow;
     std::list<std::pair<std::list<int>,int>> allPaths = {};
     bool hasDir;
     std::vector<Node> all_vertex;
@@ -56,21 +47,14 @@ class Graph2{
 public:
     Graph2(int nodes, bool dir = false);
 
-    std::vector<Node> getAllVertexs();
     int getMaxFlow(int dest);
-    Node findNode(int i);
-    void addNode(int i);
     void addEdgeCapacity(int sourc, int dest, int c, int d);
     std::vector<int>path(int ori, int dest);
     int max_node_capacity(int n);
     void maxCapMinDist(int ori);
     void minDistMaxCap(int ori);
-    //bool addVertex(const T &in);
-    Node initSingleSourceCapacity(int origin);
     void maximizeCapacity(int ori);
-    std::vector<Node> printCapacity(Node &source, Node &goal);
     bool operator<(Node & node) const;
-    void print_flow();
     bool bfs(int ori, int dest);
     int findMaxFlowEK(int ori, int dest);
     void updateFlows(int ori, int dest, int flow);
@@ -81,6 +65,8 @@ public:
     bool path_checker(int ori, int dest, std::vector<Edge*> &edges);
     void printAllPaths();
     int reuniteGroup(int ori, int dest, int size);
+    void longestWait(int ori);
+    std::list<std::pair<int, int>> nodeMaxTime(int ori);
 
 };
 #endif //PROJETODA_2_GRAPH2_H

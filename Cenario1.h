@@ -11,8 +11,9 @@
 class Cenario1 {
 public:
     Cenario1();
+    void cenario1(Graph2 &graph);
     void maximizeCapacity(Graph2 & graph);
-    void maxCapMinDist(Graph2 & graph);
+    void optimal(Graph2 & graph);
 };
 
 

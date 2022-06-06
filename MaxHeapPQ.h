@@ -154,7 +154,6 @@ K MaxHeapPQ<K, V>::extractMax() {
 // of an element
 template <class K, class V>
 void MaxHeapPQ<K, V>::changePriority(int x){
-    std::cout << "index1:" << size << " ";
     shiftDown(size);
 }
 

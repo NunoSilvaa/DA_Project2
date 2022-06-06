@@ -7,10 +7,21 @@ int main() {
     populate_graph pf;
     Cenario1 c1;
     Cenario2 c2;
+    int ans;
 
     Graph2 g = pf.read_tests();
-    //c1.maximizeCapacity(g);
-    //c1.maxCapMinDist(g);
-    c2.c2_2(g);
+    std::cout << "Which cenário do you want to choose: ";
+    std::cin >> ans;
+    switch (ans) {
+        case 1:
+            c1.cenario1(g);
+            break;
+        case 2:
+            c2.cenario2(g);
+        case 0:
+            exit(0);
+
+
+    }
     return 0;
 }
