@@ -8,7 +8,7 @@ Cenario2::Cenario2() {}
 
 void Cenario2::cenario2(Graph2 &graph) {
     int ans;
-    std::cout << "Which cenário do you want to choose: ";
+    std::cout << "Which cenario do you want to choose: ";
     std::cin >> ans;
     switch (ans) {
         case 1:
@@ -50,16 +50,6 @@ void Cenario2::c2_1_2_2(Graph2 & graph) {
             }
     }
     }
-    /*for(auto e : allPaths){
-        std::cout << "cap:" <<e.first << " (";
-        for(int i = e.second.size()-1; i >= 0; i--){
-            if(i == 0)
-                std::cout << e.second[i] << ")";
-            else
-                std::cout << e.second[i] << "->";
-        }
-    }*/
-    //std::cout << graph.bfs(1, 6) << " "/*graph.edmondsKarp(ori, dest)*/;
 }
 
 void Cenario2::c2_3(Graph2 &graph) {
@@ -84,8 +74,6 @@ void Cenario2::c2_4(Graph2 & graph) {
     std::cout << "How many people are in the group? ";
     std::cin >> size;
     if(graph.edmondsKarpGroupSize(ori, dest, size)){
-        //std::cout << "maxFlow: " << graph.getMaxFlow(dest) << "\n";
-        //graph.printAllPaths();
         std::cout << "The group will be reunited in " << graph.reuniteGroup(ori, dest, size) << " hours\n";
     }
 }
@@ -105,10 +93,4 @@ void Cenario2::c2_5(Graph2 &graph){
             std::cout << t.first << " ";
         }
     }
-    //std::cout << times.size();
-    /*for (auto t: times) {
-        if (t.second != 0) {
-            std::cout << t.second << " min " << t.first << " stop ";
-        }
-    }*/
 }

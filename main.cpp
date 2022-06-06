@@ -10,7 +10,7 @@ int main() {
     int ans;
 
     Graph2 g = pf.read_tests();
-    std::cout << "Which cenário do you want to choose: ";
+    std::cout << "Which cenario do you want to choose: ";
     std::cin >> ans;
     switch (ans) {
         case 1:
@@ -20,7 +20,6 @@ int main() {
             c2.cenario2(g);
         case 0:
             exit(0);
-
 
     }
     return 0;
